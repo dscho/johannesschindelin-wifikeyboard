@@ -231,6 +231,7 @@ public abstract class HttpConnection {
       case STORE_HEADER_DATA:
         headerState = storeHeaderData();
         break;
+      default:
       }
     }
     return HttpConnectionState.READ_HEADER;

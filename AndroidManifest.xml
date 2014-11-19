@@ -30,8 +30,7 @@
         android:largeScreens="true"
         android:normalScreens="true"
         android:resizeable="true"
-        android:smallScreens="true"
-        android:xlargeScreens="true" />
+        android:smallScreens="true" />
     
     <application android:icon="@drawable/icon"
                  android:label="@string/app_name">

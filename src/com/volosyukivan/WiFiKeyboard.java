@@ -77,12 +77,7 @@ public class WiFiKeyboard extends Activity {
       text(R.string.desc_setup_wifi, 20);
       text(R.string.desc_goto_settings);
       text(R.string.desc_enable_kbd);
-      final int sdkVersion = Integer.parseInt(Build.VERSION.SDK);
-      if (sdkVersion >= Build.VERSION_CODES.HONEYCOMB) {
-        text(R.string.desc_toch_input_field_honeycomb);
-      } else {
-        text(R.string.desc_toch_input_field);
-      }
+      text(R.string.desc_toch_input_field);
       text(R.string.desc_change_input_method);
       text("", 15);
       if (addrs.size() == 0) {

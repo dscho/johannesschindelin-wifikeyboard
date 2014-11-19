@@ -250,9 +250,6 @@ public class WiFiInputMethod extends InputMethodService {
           if (!down) return;
           deleteWordLeft(conn);
           return;
-        case KeyEvent.KEYCODE_FORWARD_DEL:
-          deleteWordRight(conn);
-          return;
         case KeyEvent.KEYCODE_DPAD_CENTER:
           if (!down) return;
           copy(conn);
@@ -297,7 +294,6 @@ public class WiFiInputMethod extends InputMethodService {
             0,
             (pressedKeys.contains(KeyEvent.KEYCODE_SHIFT_LEFT)
                 ? KeyEvent.META_SHIFT_LEFT_ON : 0) +
-            (pressedKeys.contains(KEY_CONTROL)? KeyEvent.META_CTRL_ON : 0) +
             (pressedKeys.contains(KeyEvent.KEYCODE_ALT_LEFT)
                 ? KeyEvent.META_ALT_LEFT_ON : 0)
 

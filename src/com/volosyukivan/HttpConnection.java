@@ -428,24 +428,12 @@ public abstract class HttpConnection {
     return HttpConnectionState.READ_FORM_DATA;
   }
   
-  private static final byte[] ACCEPTED_CONTENT_TYPE =
-    "application/x-www-form-urlencoded".getBytes();
   private static byte LETTER_ZERO = "0".getBytes()[0];
   
   private HttpConnectionState considerFormData() {
     if (!isPost) {
       return HttpConnectionState.EXECUTE_REQUEST;
     }
-    
-    byte[] contentType = header[0]; 
-//    if (ACCEPTED_CONTENT_TYPE.length != headerLen[0]) {
-//      throw new ConnectionFailureException("unsupported content type");
-//    }
-//    int len = ACCEPTED_CONTENT_TYPE.length;
-//    for (int i = 0; i < len; i++) {
-//      if (ACCEPTED_CONTENT_TYPE[i] != contentType[i])
-//        throw new ConnectionFailureException("unsupported content type");
-//    }
     
     int contentLen = 0;
     int len = headerLen[0] - 1;

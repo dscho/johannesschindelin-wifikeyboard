@@ -25,7 +25,6 @@ import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.util.ArrayList;
 
-import android.os.Handler;
 import android.os.RemoteException;
 import android.util.Log;
 

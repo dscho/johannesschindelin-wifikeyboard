@@ -18,13 +18,9 @@
  */
 package com.volosyukivan;
 
-import java.util.Date;
-
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
-import android.content.SharedPreferences;
-import android.util.Log;
 
 public class WidgetProvider extends AppWidgetProvider {
   @Override
